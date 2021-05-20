@@ -1,5 +1,5 @@
 'use strict';
-
+const a = 3;
 const newsPaper = {
   title: 'FC daily',
   articles: ['Test1','Heading','String1','Article1'],
