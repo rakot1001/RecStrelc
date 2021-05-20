@@ -1,6 +1,7 @@
 'use strict';
 const a = 3;
 const b = 4;
+const b = 4;
 const newsPaper = {
   title: 'FC daily',
   articles: ['Test1','Heading','String1','Article1'],
