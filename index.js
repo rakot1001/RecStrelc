@@ -1,17 +1,14 @@
 'use strict';
 
-function test() {
-  console.log(this);
-}
+const newsPaper = {
+  title: 'FC daily',
+  articles: ['Test1','Heading','String1','Article1'],
 
-const test2 = function() {
-  console.log(this);
-}
+  showArticles() {
+    this.articles.forEach(function logItem(currentArticle, index){
+      console.log(`${this.title} => ${index + 1}: ${currentArticle}`); 
+    });
+  },
+};
 
-const test3 = () => {
-  console.log(this);
-}
-
-test();
-test2();
-test3();
+newsPaper.showArticles();
